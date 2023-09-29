@@ -1,0 +1,36 @@
+TACTIC;TECHNIQUE;TECHNIQUE ID;SUBTECHNIQUE;SUBTECHNIQUE ID;ATTACK;TOOL;Pcap file;SID (without repetition);#SID;Total number of alerts
+Reconnaissance;Active Scanning;T1595;Vulnerability Scanning;T1595.002;Vulnerability scanning;nmap;T1595.002.pcapng;1421,1418;2;4
+Reconnaissance;Active Scanning;T1595;Wordlist Scanning;T1595.003;Web page scanning;Dirb;T1595.003-web_page_scanning1.pcapng;1434,1433,1201,1129,1071,2062,43285,1288,940,937,1662,1489,1145,1301,879,1218,845,1213,885,1206,882,1231,1543,1551,839,825,1016,1141,1606,993,886,1877,895,1852,1520,1521,835,849,896,1826,853,43290,887,1025;44;9562
+Reconnaissance;Active Scanning;T1595;Wordlist Scanning;T1595.003;Web page scanning;GoBuster;T1595.003-web_page_scanning2.pcapng;1434,1433,1129,1071,1201,2062,43285,1288,940,937,1662,1489,1145,1301,879,1218,845,1213,885,1206,882,1231,1543,1551,839,825,1016,1141,1606,993,886,1877,895,1852,1520,1521,835,849,896,1826,853,43290,887;43;62
+Reconnaissance;Search Open Technical Databases;T1596;DNS/Passive DNS;T1596.001;DNS zone transfer;Dirb;T1596.001.pcapng;255;1;1
+Execution;User Execution;T1204;Malicious Link;T1204.001;Malicious link;wget;T1204.001.pcapng;-;0;0
+Execution;Windows Management Instrumentation;T1047;-;-;Payload execution using WinRM;Metasploit;T1047.pcapng;1394;1;18
+Resource Development;Compromise Accounts;T1586;Social Media Accounts;T1586.001;Brute force towards web login;Hydra;T1586.001.pcapng;-;0;0
+Initial Access;Exploit Public-Facing Application;T1190;-;-;SQL injection;Sqlmap;T1190-sql_inyection1.pcapng;-;0;0
+Initial Access;Exploit Public-Facing Application;T1190;-;-;SQL injection;Sqlmap;T1190-sql_inyection2.pcapng;1061,1122,1147;3;5
+Persistence;Server Software Component;T1505;SQL Stored Procedures;T1505.001;SQL injection;Inyección SQL;T1505.001.pcapng;-;0;0
+Persistence;Server Software Component;T1505;Web Shell;T1505.005;Web Shell;Metasploit;T1505.005.pcapng;-;0;0
+Persistence;Traffic Signaling;T1205;Port Knocking;T1205.001;Hiding and activating a port remotely;Knockd;T1205.001.pcapng;-;0;0
+Credential Access;Brute Force;T1110;Password Guessing;T1110.001;Get password by brute force;Hydra;T1110.001.pcapng;-;0;0
+Credential Access;Adversary-in-the-Middle;T1557;ARP Cache Poisoning;T1557.002;ARP poisoning;Arpspoof;T1557.002-ARP_poisoning1.pcapng;-;0;0
+Credential Access;Adversary-in-the-Middle;T1557;ARP Cache Poisoning;T1557.002;ARP poisoning;Metasploit;T1557.002-ARP_poisoning2.pcapng;-;0;0
+Collection;Data from Configuration Repository;T1602;SNMP (MIB Dump);T1602.001;Get MIB of a equipment;Metasploit;T1602.001.pcapng;1411, 1417;2;792
+Collection;Data from Information Repositories;T1213;-;-;SQL injection;Sqlmap;T1213.pcapng;-;0;0
+Impact;Data Manipulation;T1565;Stored Data Manipulation;T1565.001;SQL injection;Sqlmap;T1565.001.pcapng;-;0;0
+Impact ;Endpoint Denial of Service;T1499;OS Exhaustion Flood;T1499.02;Denial of service (web server);Metasploit;T1499.02.pcapng;40063;1;92
+Impact ;Network Denial of Service;T1498;Direct Network Flood;T1498.001;MAC table flooding;Macof;T1498.001-MAC_table_flood.pcapng;1917;1;8
+Impact ;Network Denial of Service;T1498;Direct Network Flood;T1498.001;UDP flooding;hping3;T1498.001-UDP_flood.pcapng;402;1;15
+Impact;Resource Hijacking;T1496;-;-;Downloading and running mining software;XMRIG;T1496.pcapng;254;1;2
+Command and Control;Application Layer Protocol;T1071;DNS;T1071.004;Command - Control via DNS;dnscat2;T1071.004.pcapng;-;0;0
+Command and Control;Non-Standard Port;T1571;-;-;SSH session on port 2200;ssh;T1571.pcapng;-;0;0
+Command and Control;Traffic Signaling;T1205;Port Knocking;T1205.001;Hiding and activating a port remotely;Knockd;T1205.001.pcapng;-;0;0
+Defense Evasion;System Binary Proxy Execution;T1218;Regsvr32;T1218.010;Remote COM scriptlet execution;Regsvr32.exe;T1218.010.pcapng;-;0;0
+Defense Evasion;Traffic Signaling;T1205;Port Knocking;T1205.001;Hiding and activating a port remotely;Knockd;T1205.001.pcapng;-;0;0
+Lateral Movement;Exploitation of Remote Services;T1210;-;-;EternalBlue;Metasploit;T1210-eternal_blue.pcapng;42944;1;1
+Lateral Movement;Exploitation of Remote Services;T1210;-;-;Remote code execution based on vulnerability in FTP server;Metasploit;T1210-remote_code_execution.pcapng;-;0;0
+Discovery;Network Service Scanning;T1046;-;-;Service and version discovery;Nikto;T1046_version_services_detection1.pcapng;1071,1242,1131,1130,1044,1129,987,1054,1245,977,971,1880,1852,1145,2056,913,914,912,985,1400,962,1288,853,2152,1738,1875,1301,2002,918,999,1000,993,1486,1172,857,1284,3201,986,1256,1016,1826,1482,1567,1568,1772,2076,1080,1128,1076,1492,1493,1560,2565,1146,1848,1148,1125,1166,1286,1660,1765,1528,1164,2484,903,1551,2228,1402,1150,1576,1152,1580,1153,1154,2062,1048,1103,1586,1577,1578,1579,931,2246,1587,1122,1002,992,1401,875,1829,911,1244,966,906,928,1773,1517,1147,2154,1491,1611,2000,1157,1828,1376,2077,1827,1231,1767,1774,1834,1667,2347,2346,1835,1998,882,922,1659,1877,1212,910,930,1722,1108,915,935,1141,1163,2060,1173,1544,936,1230,1742,1743,1540,1250,2138,1168,1407,1385,1564,805,1726,940,937,952,967,1248,955,958,961,965,1847,1175,1111,1592,43290,1481,1521,1201,1123,1183,1160,1500,1013,807,1193,979,1023,1024,1487,1018,2325,1162,1134,1213,904,932,907,905,1214,1215,1192,1155,1556,1161,1202,1030,1040,887,878,1038,1022,1077,1078,946,1075,984,1073,851,1127,844,1585,1584,1582,1151,1575,1583,1581,2148,2151,2144,1458,2137,2397,1525,2215,2223,1787,1724,43289,2204,2205,2206,1637,1142,2073,2225,2130,2131,1997,2214,1037,2085,2219,2133,1434,1433,1872,1874,839,941,945,879,950,1542,944,943,980,942,947,968,956,949,957,990,953,951,959,964,2447,1005,1559,1119,1120,908,1816,1614,2395,1871,2326,2196,954,948,1851,1110,1489,818,1032,1043,1033,1034,1035,1036,1031,2142,1527,1526,902,2198,1520,1209,1557,1555,1770,1769,1873,1522,1523,1004,895,2393,2276,2295,1671,2363,1399,1091,2285,2140,2410,886,2281,2288,2298,1254,43285;319;1846
+Discovery;"	Network Service Scanning";T1046;-;-;Service and version discovery;nmap;T1046_version_services_detection2.pcapng;384,453,408,451,1421,1420,1418,257,598;9;9
+Discovery;Remote System Discovery;T1018;-;-;Service and port discovery;nmap;T1018.pcapng;1421,1418;2;2
+Exfiltration;Exfiltration Over Alternative Protocol;T1048;Exfiltration Over Unencrypted  Non-C2 Protocol;T1048.003;Exfiltration over ICMP;hping3;T1048.003-exfiltration_over_ICMP.pcapng;29456,384,408;3;48
+Exfiltration;Exfiltration Over Alternative Protocol;T1048;Exfiltration Over Unencrypted  Non-C2 Protocol;T1048.003;Exfiltration over FTP;Caldera;T1048.003-exfiltration_over_FTP.pcapng;-;0;0
+Exfiltration;Exfiltration Over C2 Channel;T1041;-;-;Exfiltration over C2 channel;Caldera;T1041.pcapng;-;0;0
